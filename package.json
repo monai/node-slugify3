@@ -1,0 +1,24 @@
+{
+  "name": "slugify",
+  "version": "0.0.0",
+  "description": "Slugify file names",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "slugify": "./cli.js"
+  },
+  "keywords": [
+    "slug",
+    "fs",
+    "cli"
+  ],
+  "author": "monai",
+  "license": "MIT",
+  "dependencies": {
+    "optimist": "~0.6.0",
+    "async": "~0.2.9",
+    "unidecode": "~0.1.3"
+  }
+}
