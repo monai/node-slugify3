@@ -2,11 +2,11 @@
 
 var fs = require('fs');
 var path = require('path');
-var optimist = require('optimist');
+var yargs = require('yargs');
 var async = require('async');
 var slugify = require('./index');
 
-var argv = optimist
+var argv = yargs
 .usage('Usage: $0 [OPTIONS] FILE')
 .describe('e', 'lowercase file extension')
 .demand(1)
