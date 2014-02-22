@@ -6,7 +6,7 @@ function slugify(str, sep) {
     var out, re, i, l, stri;
     
     sep = (typeof sep !== 'undefined') ? sep : '-';
-    re = RegExp('[\x00-\x2f\x3a-\x40\x5b-\x60\x7b-\x7f'+ sep +']')
+    re = RegExp('[\x00-\x2f\x3a-\x60\x7b-\x7f]|'+ sep);
     str = unidecode(str);
     str = str.toLowerCase()
     str = str.split(re);
