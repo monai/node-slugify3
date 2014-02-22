@@ -6,8 +6,8 @@ function slugify(str) {
     var out, re, i, l, stri;
     
     re = /[\x00-\x2f\x3a-\x40\x5b-\x60\x7b-\x7f]/
-    str = str.toLowerCase()
     str = unidecode(str);
+    str = str.toLowerCase()
     str = str.split(re);
     
     out = [];
