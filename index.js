@@ -30,8 +30,9 @@ function slugify(file, normalizeExt, callback) {
 function _slugify(str) {
     var out, re, i, l, stri;
     
-    re = /[§\-=±!@#\$%\^&\*\(\)_\+`~\[\]{};'\\:\"\|,\./<>\?\s\u2010-\u28ff]/;
+    re = /[\x00-\x2f\x3a-\x40\x5b-\x60\x7b-\x7f]/
     str = str.toLowerCase()
+    str = unidecode(str);
     str = str.split(re);
     
     out = [];
@@ -42,5 +43,5 @@ function _slugify(str) {
         }
     }
     
-    return unidecode(out.join('-'));
+    return out.join('-');
 }
