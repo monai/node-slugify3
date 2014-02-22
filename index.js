@@ -2,10 +2,11 @@ var unidecode = require('unidecode');
 
 module.exports = slugify;
 
-function slugify(str) {
+function slugify(str, sep) {
     var out, re, i, l, stri;
     
-    re = /[\x00-\x2f\x3a-\x40\x5b-\x60\x7b-\x7f]/
+    sep = (typeof sep !== 'undefined') ? sep : '-';
+    re = RegExp('[\x00-\x2f\x3a-\x40\x5b-\x60\x7b-\x7f'+ sep +']')
     str = unidecode(str);
     str = str.toLowerCase()
     str = str.split(re);
@@ -18,5 +19,5 @@ function slugify(str) {
         }
     }
     
-    return out.join('-');
+    return out.join(sep);
 }
