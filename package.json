@@ -14,7 +14,7 @@
   "devDependencies": {
     "unicode-6.3.0": "~0.1.2",
     "string.fromcodepoint": "~0.1.0",
-    "mocha": "~1.17.1"
+    "mocha": "~1.18.2"
   },
   "scripts": {
     "test": "mocha -R spec test"
