@@ -1,6 +1,6 @@
 {
   "name": "slugify",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Unicode based slugify implementation and CLI tool for file renaming",
   "main": "index.js",
   "bin": {
