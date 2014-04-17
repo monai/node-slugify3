@@ -1,5 +1,4 @@
 var assert = require('assert');
-var unicode = require('unicode-6.3.0');
 var slugify = require('../index.js');
 require('string.fromcodepoint');
 
@@ -26,8 +25,9 @@ describe('slugify', function () {
                 assert(isSlug(str));
             });
         }
-    
-        unicode.scripts.forEach(function (script) {
+        
+        var scripts = [ 'Latin', 'Cyrillic', 'Greek' ];
+        scripts.forEach(function (script) {
             var cp = require('unicode-6.3.0/scripts/'+ script +'/code-points');
             test(cp, script);
         });
