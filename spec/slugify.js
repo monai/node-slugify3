@@ -1,5 +1,5 @@
 var assert = require('assert');
-var slugify = require('../index.js');
+var slugify = require('../lib/slugify.js');
 require('string.fromcodepoint');
 
 describe('slugify', function () {
@@ -7,16 +7,16 @@ describe('slugify', function () {
         it('should use passed separator', function () {
             var str = 'aaa~bbb-ccc';
             var slug = slugify(str, '~');
-            
+
             assert.strictEqual(slug, 'aaa~bbb~ccc');
         });
     });
-    
+
     describe('scripts', function () {
         function isSlug(str) {
             return (/^(?:[0-9a-z]|-)*$/).test(str);
         }
-    
+
         function test(cp, comment) {
             it(comment, function () {
                 var str;
@@ -25,7 +25,7 @@ describe('slugify', function () {
                 assert(isSlug(str));
             });
         }
-        
+
         var scripts = [ 'Latin', 'Cyrillic', 'Greek' ];
         scripts.forEach(function (script) {
             var cp = require('unicode-6.3.0/scripts/'+ script +'/code-points');

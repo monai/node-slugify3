@@ -1,15 +1,15 @@
 {
   "name": "slugify",
   "version": "0.0.2",
-  "description": "Unicode based slugify implementation and CLI tool for file renaming",
+  "description": "Unidecode based slugify implementation and CLI tool for file renaming",
   "main": "index.js",
   "bin": {
-    "slugify": "./cli.js"
+    "slugify": "bin/slugify"
   },
   "dependencies": {
     "async": "~0.7.0",
     "unidecode": "~0.1.3",
-    "yargs": "~1.2.1"
+    "yargs": "~1.2.6"
   },
   "devDependencies": {
     "unicode-6.3.0": "~0.1.2",
@@ -17,7 +17,7 @@
     "mocha": "~1.18.2"
   },
   "scripts": {
-    "test": "mocha -R spec test"
+    "test": "mocha -R spec spec"
   },
   "repository": {
     "type": "git",
