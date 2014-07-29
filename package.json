@@ -1,5 +1,5 @@
 {
-  "name": "slugify",
+  "name": "slugify2",
   "version": "0.0.2",
   "description": "Unidecode based slugify implementation and CLI tool for file renaming",
   "main": "index.js",
@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/monai/slugify.git"
+    "url": "git@github.com:monai/node-slugify2.git"
   },
   "keywords": [
     "slug",
