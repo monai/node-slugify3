@@ -1,4 +1,4 @@
-# slugify2
+# slugify3
 
 Unidecode based slugify implementation and CLI tool for file renaming.
 
@@ -7,7 +7,7 @@ This slugify implementation is unique in the way that uses [unidecode](https://w
 ## How to use
 
 ``` js
-var slugify = require('slugify2');
+var slugify = require('slugify3');
 slugify('Language Learning and Teaching');
 slugify('Изучение и обучение иностранных языков', '+');
 slugify('語文教學・语文教学');
@@ -15,7 +15,7 @@ slugify('語文教學・语文教学');
 
 ## Installation
 
-npm install slugify2
+npm install slugify3
 
 ## API
 
