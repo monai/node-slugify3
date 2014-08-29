@@ -30,7 +30,7 @@ slugify('語文教學・语文教学');
 
 **slugify(string, separator)**
 
-- `string` String - aa unicode string to slugify
+- `string` String - an unicode string to slugify
 - `separator` String, - optional, default "-", a replacement character for non-ascii symbols and spaces
 
 ## CLI
